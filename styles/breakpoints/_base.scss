@@ -5,20 +5,21 @@ Stylesheet: ベーススタイル
 ******************************************************************/ 
 body { 
   // background-color: $cBgGray; 
+  @extend .font-md;
 } 
 img { 
   max-width: 100%; 
   vertical-align: bottom; 
 } 
-// .font-sm { 
-//   font-size: 14px; 
-// } 
+.font-sm { 
+  font-size: 0.625rem; 
+} 
 .font-md { 
   font-size: 0.875rem; 
 } 
-// .font-lr { 
-//   font-size: 17px; 
-// } 
+.font-lr { 
+  font-size: 1.125rem; 
+} 
 // .font-lg { 
 //   font-size: 25px; 
 // } 
@@ -28,9 +29,9 @@ img {
 // .mb-lg { 
 //   margin-bottom: 80px !important; 
 // } 
-// .pb-sm { 
-//   padding-bottom: 16px !important; 
-// } 
+.pb-sm {
+  padding: 0 20px;
+} 
 // .pb-lg { 
 //   padding-bottom: 80px !important; 
 // } 
@@ -38,13 +39,14 @@ img {
   width: 100%; 
   margin: 0 auto; 
   max-width: $contentMaxWidth; 
+}
+.section-title { 
+  @extend .font-lr; 
+  font-weight: 600; 
+  margin-bottom: 30px;
+  text-align: center; 
+  display: block;
 } 
-// .main-title { 
-//   @extend .font-lg; 
-//   font-weight: 600; 
-//   margin-bottom: 0; 
-//   display: block; 
-// } 
 // .sub-title { 
 //   @extend .font-sm; 
 //   color: $cSubTitle; 
@@ -63,6 +65,7 @@ img {
     margin-top: 60px; 
     padding: 0 10px; 
   } 
+
   &__logo { 
     width: 180px; 
     margin-bottom: 15px; 
@@ -70,4 +73,105 @@ img {
       vertical-align: baseline; 
     } 
   } 
+}
+
+.main {
+  margin-bottom: 60px;
+}
+
+.section {
+  &__inner {
+    @extend .pb-sm
+  }
+}
+
+.index {
+  background-color: $cBgGray;
+  padding: 40px 20px;
+  margin-bottom: 60px;
+
+  &__list {
+    display: flex;
+    padding: 30px;
+    border: 1px solid #333333;
+  }
+
+  &__list ol {
+    display: table;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  &__list li {
+    margin-bottom: 20px;
+    @extend .font-md;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.img-list {
+  margin-bottom: 60px;
+
+  & ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+
+    & li {
+      list-style: none;
+      margin-bottom: 15px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.detail {
+  background-color: $cBgGray;
+  padding: 40px 20px;
+  margin-bottom: 60px;
+
+  &__list dl {
+    margin: 0;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #333333;
+
+    & dd {
+      margin-bottom: 10px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__text {
+    padding-top: 40px;
+
+    & p {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__link a {
+    color: #333333;
+    text-decoration: underline;
+  }
+
+}
+
+.footer {
+  &__inner {
+    margin-bottom: 15px;
+  }
+
+  & p {
+    margin: 0;
+    text-align: center;
+    @extend .font-sm;
+  }
 }
