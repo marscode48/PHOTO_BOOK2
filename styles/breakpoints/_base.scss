@@ -11,14 +11,14 @@ img {
   max-width: 100%; 
   vertical-align: bottom; 
 } 
-// .font-sm { 
-//   font-size: 14px; 
-// } 
+.font-sm { 
+  font-size: 0.625rem; 
+} 
 .font-md { 
   font-size: 0.875rem; 
 } 
 .font-lr { 
-  font-size: 18px; 
+  font-size: 1.125rem; 
 } 
 // .font-lg { 
 //   font-size: 25px; 
@@ -162,4 +162,16 @@ img {
     text-decoration: underline;
   }
 
+}
+
+.footer {
+  &__inner {
+    margin-bottom: 15px;
+  }
+
+  & p {
+    margin: 0;
+    text-align: center;
+    @extend .font-sm;
+  }
 }

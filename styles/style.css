@@ -9,12 +9,16 @@ img {
   vertical-align: bottom;
 }
 
+.font-sm, .footer p {
+  font-size: 0.625rem;
+}
+
 .font-md, body, .index__list li {
   font-size: 0.875rem;
 }
 
 .font-lr, .section-title {
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 .pb-sm, .section__inner {
@@ -135,6 +139,15 @@ img {
 .detail__link a {
   color: #333333;
   text-decoration: underline;
+}
+
+.footer__inner {
+  margin-bottom: 15px;
+}
+
+.footer p {
+  margin: 0;
+  text-align: center;
 }
 
 @media (min-width: 480px) {
