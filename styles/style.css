@@ -1,9 +1,38 @@
 @charset "UTF-8";
-/******************************************************************
-
-Stylesheet: ベーススタイル
-
+/****************************************************************** 
+ 
+Stylesheet: ベーススタイル 
+ 
 ******************************************************************/
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+.font-md {
+  font-size: 0.875rem;
+}
+
+.content-width, .container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.header__inner {
+  margin-top: 60px;
+  padding: 0 10px;
+}
+
+.header__logo {
+  width: 180px;
+  margin-bottom: 15px;
+}
+
+.header__logo img {
+  vertical-align: baseline;
+}
+
 @media (min-width: 480px) {
   /******************************************************************
 
