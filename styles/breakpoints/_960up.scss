@@ -3,3 +3,47 @@
 Stylesheet: 960px以上のモニタで適用
 
 ******************************************************************/
+
+.section__inner {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.img-list ul {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  & li {
+    width: 49%;
+    & img {
+      height: 100%;
+    }
+  }
+}
+
+.detail {
+  padding: 60px 60px;
+
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__list {
+    width: 35%;
+    border-right: 1px solid #333333;
+    border-bottom: none;
+    padding-bottom: 0px;
+    padding-right: 40px;
+  }
+
+  &__text {
+    width: 75%;
+    padding-left: 40px;
+    padding-top: 0px;
+  }
+  
+  // リンクの横並びから
+}

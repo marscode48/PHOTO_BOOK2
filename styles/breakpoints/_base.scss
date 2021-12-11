@@ -42,7 +42,7 @@ img {
 }
 .section-title { 
   @extend .font-lr; 
-  font-weight: 600; 
+  font-weight: 700; 
   margin-bottom: 30px;
   text-align: center; 
   display: block;
@@ -135,7 +135,7 @@ img {
   padding: 40px 20px;
   margin-bottom: 60px;
 
-  &__list dl {
+  &__list {
     margin: 0;
     padding-bottom: 40px;
     border-bottom: 1px solid #333333;
@@ -157,7 +157,7 @@ img {
     }
   }
 
-  &__link a {
+  &__link {
     color: #333333;
     text-decoration: underline;
   }
@@ -166,7 +166,7 @@ img {
 
 .footer {
   &__inner {
-    margin-bottom: 15px;
+    padding: 15px 0;
   }
 
   & p {

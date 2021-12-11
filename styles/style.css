@@ -32,7 +32,7 @@ img {
 }
 
 .section-title {
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 30px;
   text-align: center;
   display: block;
@@ -114,17 +114,17 @@ img {
   margin-bottom: 60px;
 }
 
-.detail__list dl {
+.detail__list {
   margin: 0;
   padding-bottom: 40px;
   border-bottom: 1px solid #333333;
 }
 
-.detail__list dl dd {
+.detail__list dd {
   margin-bottom: 10px;
 }
 
-.detail__list dl dd:last-child {
+.detail__list dd:last-child {
   margin-bottom: 0;
 }
 
@@ -136,13 +136,13 @@ img {
   margin-bottom: 20px;
 }
 
-.detail__link a {
+.detail__link {
   color: #333333;
   text-decoration: underline;
 }
 
 .footer__inner {
-  margin-bottom: 15px;
+  padding: 15px 0;
 }
 
 .footer p {
@@ -172,6 +172,51 @@ Stylesheet: 600px以上のタブレットやモニタで適用
 Stylesheet: 960px以上のモニタで適用
 
 ******************************************************************/
+  .section__inner {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .img-list ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .img-list ul li {
+    width: 49%;
+  }
+  .img-list ul li img {
+    height: 100%;
+  }
+  .detail {
+    padding: 60px 60px;
+  }
+  .detail__flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .detail__list {
+    width: 35%;
+    border-right: 1px solid #333333;
+    border-bottom: none;
+    padding-bottom: 0px;
+    padding-right: 40px;
+  }
+  .detail__text {
+    width: 75%;
+    padding-left: 40px;
+    padding-top: 0px;
+  }
 }
 
 @media (min-width: 1280px) {
